@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  color: #000;
+  font-family: 'Caveat', cursive;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: bottom;
+}
+.message {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ffccff;
+  color: #5c2e5c;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.love {
+  cursor: pointer;
+  padding: 50px;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);  
+}
+.text1 {
+  margin: 18px;
+}
+h1,
+p {
+  margin: 0;  
+}
+p {
+  margin-top: -20px;
+}
+p.final {
+  text-align:center;
+  margin: 20px auto;
+  font-size: 2em;
+  font-weight: 200;
+}
+h1 {
+  font-weight: 400;
+  font-size: 2.7em;
+}
+span {
+  float: left;
+  display:block;
+  width: 100px;
+  height: 100px;
+}
+.text {
+  font-size: 2.5em;
+  line-height:100px;
+  width: 37px;
+}
+.heart {
+  text-indent:-99999px;
+  margin-left: -35px;
+  margin-right: -32px;
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.message:hover,
+.message:focus,
+.message:active {  
+  background: #bf9fdf;
+  color:#000;
+}
+.message:hover .heart,
+.message:focus .heart,
+.message:active .heart {
+  background-position: -2800px 0;  
+  -webkit-transition: background 1s steps(28);
+  -moz-transition: background 1s steps(28);
+  -o-transition: background 1s steps(28);
+  -ms-transition: background 1s steps(28);
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">	
+$(document).ready(function() {
+$('.love').click(function() {
+$(this).html('<p class="final">Anh yêu em quá đi !</p><img src="http://i.giphy.com/26FLdmIp6wJr91JAI.gif" width="480" height="270" alt="Love you gỉtl">' );
+});
+});
+</script>	
+</head>
+<body>
+<div class="message">
+   <div class="love" title="Vas-y, clic papounet &hearts;&hearts;&hearts;">
+    <h1>My Love</h1>
+    <p>
+      <span class="text">T</span>
+      <span class="text">R</span>
+      <span class="text">I</span>
+      <span class="text">N</span>
+      <span class="text">H</span>
+ <span class='heart'></span>
+      <span class="text1">Click vào đây anh muốn nói với e là..</span>
+    </p>
+  </div>
+</div>
+<iframe src="https://www.nhaccuatui.com/mh/background/yuLkQhoy170L" width="1" height="1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+</body>
+</html>
